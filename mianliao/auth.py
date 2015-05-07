@@ -27,7 +27,7 @@ os.makedirs(os.path.split(pass_path)[0], exist_ok=True)
 if os.path.exists(pass_path):
     with open(pass_path) as fp:
         data = json.load(fp)
-        r.get("http://wifi.52mianliao.com")
+        #r.get("http://wifi.52mianliao.com")
         r.post('http://wifi.52mianliao.com', data={'ua':ua, 'sh': 720, 'sw':1366, 'ww': 1330, 'wh': 600})
         r.post("http://wifi.52mianliao.com/", data={
             "action": "login",
