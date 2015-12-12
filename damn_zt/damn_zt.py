@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from sh import ping, osascript, ErrorReturnCode_2, ErrorReturnCode
 import time
 import tempfile
