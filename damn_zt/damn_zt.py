@@ -27,7 +27,7 @@ while True:
     try:
         result = ping("25.25.0.2", _bg=True)
         for i in result:
-            print(i)
+            print(i, end="")
             if "timeout" in i or "down" in i:
                 update_status(False)
             elif "bytes from" in i:
