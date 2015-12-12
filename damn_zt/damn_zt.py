@@ -13,6 +13,7 @@ def say(title, body):
     osascript(fp.name)
     os.unlink(fp.name)
 def update_status(status):
+    global pingable
     if status != pingable:
         pingable = status
         if status:
